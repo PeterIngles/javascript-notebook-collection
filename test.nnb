@@ -1,0 +1,62 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# Title\n\n\nBlah blah blah blah blah blag"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const animals = ['pigs', 'goats', 'sheep'];\n\nconst count = animals.push('cows');\nconsole.log(count);\n// Expected output: 4\nconsole.log(animals);\n// Expected output: Array [\"pigs\", \"goats\", \"sheep\", \"cows\"]\n\nanimals.push('chickens', 'cats', 'dogs');\nconsole.log(animals);\n// Expected output: Array [\"pigs\", \"goats\", \"sheep\", \"cows\", \"chickens\", \"cats\", \"dogs\"]\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "4",
+                                "[",
+                                "  'pigs',     'goats',",
+                                "  'sheep',    'cows',",
+                                "  'chickens', 'cats',",
+                                "  'dogs'",
+                                "]",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# New Section"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let name = \"Peter\"\n\nconsole.log(\"Hello\", name)"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Hello Peter",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
