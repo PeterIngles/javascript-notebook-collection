@@ -1,0 +1,31 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# Reversing a String   "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "function reverseString(str){\n    let reversedString = ''\n    for(let i=str.length-1; i>=0; i--){\n        \n        reversedString += str[i]\n        \n    }\n    return reversedString\n}\n\nconsole.log(\"These words backwards are\", reverseString(\"These words backwards are\"))\n\nfunction reversedString2(str){\n    let backwardsArray = []\n    for(let i=str.length-1; i>=0; i--){\n        \n     backwardsArray.push(str[i])\n    }\nreturn backwardsArray.join('')\n}\n\nconsole.log(\"Backswards backwards is\", reversedString2(\"Backwards\"))"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "These words backwards are era sdrawkcab sdrow esehT",
+                                "Backswards backwards is sdrawkcaB",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
