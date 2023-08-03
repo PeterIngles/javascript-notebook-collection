@@ -1,0 +1,25 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# Data Structures"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let instructors = [\n    { \n        name: 'Edan', \n        title: 'instructor',\n        cohorts: [\n            {\n                name: 'Tarjan',\n                dates: {\n                    started: '06-13-2020',\n                    graduated: '11-25-2020',\n                } \n            },\n            {\n                name: 'Gaiman',\n                dates: {\n                    started: '03-28-2022',\n                    graduated: '10-12-2022',\n                }\n            }\n        ]\n    },\n    { \n        name: 'Liz',\n        title: 'instructor',\n        cohorts: [\n            {\n                name: 'Jemisin',\n                dates: {\n                    started: '05-02-22',\n                    graduated: '09-16-22'\n                }\n            }\n        ]\n    }\n]\n\n// Start off with an intention (name of the variable), coding towards it\nlet graduationDate = instructors[0].cohorts[0].dates.graduated\n\n// Looping though nested arrays\nfor(let cohort of instructors[0].cohorts){\n    console.log(` ${cohort.name} will graduate on  ${cohort.dates.graduated}`)\n    console.log(JSON.stringify(cohort.dates))\n}\n\nfor (let curr_instructor of instructors){\n    // console.group()\n    // console.log('Current Instructor:', curr_instructor)\n    // Loop over cohorts for each instructor and print to console\n    for (let cohort of curr_instructor.cohorts){\n        // console.log(\"current cohort:\", cohort, \"\\n\")\n        console.log(`${curr_instructor.name} is teaching ${cohort.name}`)\n    }\n    // console.groupEnd()\n}\n\n\n    "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        }
+    ]
+}
